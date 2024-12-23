@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="your-verification-code-here">
     <title>UNO REVERSE - The Ultimate Reversal Token</title>
+    
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BW2DS89P0F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-BW2DS89P0F', {
+            'stream_id': '10076693999'
+        });
+    </script>
+    
     <link rel="icon" type="image/png" href="images/green.png">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -432,34 +445,221 @@
             height: 100%;
             border: none;
         }
+        /* Add these mobile-specific styles */
+        @media (max-width: 768px) {
+            /* Hero section text adjustments */
+            .hero-gradient {
+                padding-top: 5rem;
+                padding-bottom: 2rem;
+            }
+            
+            /* Title size adjustments */
+            h1.text-6xl.md\\:text-8xl {
+                font-size: 2rem !important;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+            
+            /* Description text */
+            .text-xl.md\\:text-3xl {
+                font-size: 1rem !important;
+                line-height: 1.4;
+                margin-bottom: 1rem;
+            }
+            
+            /* Contract address box */
+            .contract-address {
+                font-size: 0.75rem;
+                padding: 0.5rem;
+                width: 100%;
+                max-width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                margin-bottom: 1rem;
+            }
+            
+            .contract-address code {
+                font-size: 0.75rem;
+            }
+            
+            /* Container adjustments */
+            .container.mx-auto.px-4 {
+                padding-left: 0.5rem;
+                padding-right: 0.5rem;
+            }
+            
+            /* Button adjustments */
+            .flex.flex-col.md\\:flex-row.gap-6 {
+                gap: 0.5rem;
+            }
+            
+            .px-10.py-5 {
+                padding: 0.5rem 1rem;
+                font-size: 0.875rem;
+            }
+            
+            /* Hero section layout */
+            .flex.flex-col.md\\:flex-row.items-center.justify-between > div {
+                width: 100%;
+                padding: 0 0.5rem;
+            }
+            
+            /* Contract address box */
+            .contract-address {
+                font-size: 0.875rem;
+                padding: 0.75rem;
+                width: 100%;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            
+            /* Button adjustments */
+            .px-10.py-5 {
+                padding: 0.75rem 1.25rem;
+                font-size: 1rem;
+            }
+            
+            /* Card container adjustments */
+            .relative.flex.justify-center.items-center.py-8 {
+                transform: scale(0.7);
+                margin: -2rem 0;
+            }
+            
+            /* Stats grid */
+            .grid.grid-cols-2.md\\:grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+            
+            .glass-effect.p-4 {
+                padding: 0.5rem;
+            }
+            
+            /* Feature cards */
+            .glass-effect.p-8 {
+                padding: 1rem;
+            }
+            
+            .text-2xl {
+                font-size: 1.25rem;
+            }
+            
+            /* Gallery adjustments */
+            .grid.grid-cols-2.md\\:grid-cols-4 {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.5rem;
+            }
+            
+            /* Social links */
+            .glass-effect.p-10 {
+                padding: 1rem;
+            }
+            
+            /* Token address section */
+            .glass-effect.p-10.rounded-3xl.text-center.max-w-3xl {
+                padding: 1rem;
+            }
+            
+            .text-4xl {
+                font-size: 1.75rem;
+            }
+            
+            .text-xl {
+                font-size: 1rem;
+            }
+            
+            /* Footer adjustments */
+            .py-12 {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            
+            /* Dexscreener iframe */
+            .relative.rounded-2xl.overflow-hidden {
+                height: 400px;
+            }
+            
+            /* Community Power card */
+            .md\\:col-span-3 {
+                padding: 1rem;
+            }
+            
+            /* Button group spacing */
+            .flex.justify-center.gap-4 {
+                gap: 0.5rem;
+            }
+            
+            .px-8.py-4 {
+                padding: 0.75rem 1rem;
+                font-size: 0.875rem;
+            }
+            
+            /* Container padding */
+            .container.mx-auto.px-4 {
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            
+            /* Section spacing */
+            .py-32 {
+                padding-top: 3rem;
+                padding-bottom: 3rem;
+            }
+            
+            .py-20 {
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+            }
+            
+            /* Heading margins */
+            .mb-20 {
+                margin-bottom: 2rem;
+            }
+        }
+        
+        /* Add smooth scrolling for iOS */
+        .scroll-smooth {
+            -webkit-overflow-scrolling: touch;
+        }
+        
+        /* Improve tap targets for mobile */
+        @media (max-width: 768px) {
+            a, button {
+                min-height: 44px;
+                min-width: 44px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 <body class="text-white min-h-screen">
     <!-- Navigation -->
     <nav class="fixed w-full z-50 glass-effect border-b border-white/10">
-        <div class="container mx-auto px-4 py-4">
+        <div class="container mx-auto px-2 py-2 md:px-4 md:py-4">
             <div class="flex justify-between items-center">
-                <div class="text-3xl font-bold tracking-wider">
-                    <img src="images/UNO-REVERSE-12-20-2024-4.png" alt="UNO REVERSE" class="h-16 md:h-20">
+                <div class="text-2xl md:text-3xl font-bold tracking-wider">
+                    <img src="images/UNO-REVERSE-12-20-2024-4.png" alt="UNO REVERSE" class="h-10 md:h-16">
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
-                    <a href="https://x.com/UnoReverseToken" target="_blank" class="text-white hover:text-red-400 transition-all transform hover:scale-110 flex items-center gap-2">
-                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+                <div class="flex items-center space-x-2 md:space-x-8">
+                    <a href="https://x.com/UnoReverseToken" target="_blank" class="text-white hover:text-red-400 transition-all transform hover:scale-110">
+                        <svg class="w-5 h-5 md:w-7 md:h-7" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                         </svg>
                     </a>
-                    <a href="https://t.me/UnoReverseCTO" target="_blank" class="text-white hover:text-red-400 transition-all transform hover:scale-110 flex items-center gap-2">
-                        <svg class="w-7 h-7" viewBox="0 0 24 24" fill="currentColor">
+                    <a href="https://t.me/UnoReverseCTO" target="_blank" class="text-white hover:text-red-400 transition-all transform hover:scale-110">
+                        <svg class="w-5 h-5 md:w-7 md:h-7" viewBox="0 0 24 24" fill="currentColor">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .35.03.5.16.13.13.16.3.18.43-.02.08-.02.18-.02.27z"/>
                         </svg>
                     </a>
-                    <a href="https://dexscreener.com/solana/agennwteh2wgtizfkuihw7nlqvrmkxxcrmzmyanqgyhv" target="_blank" class="text-white hover:text-red-400 transition-all transform hover:scale-110 flex items-center gap-2">
-                        <img src="images/dex.jpg" alt="Dexscreener" class="w-7 h-7 rounded-full">
+                    <a href="https://dexscreener.com/solana/agennwteh2wgtizfkuihw7nlqvrmkxxcrmzmyanqgyhv" target="_blank" class="text-white hover:text-red-400 transition-all transform hover:scale-110">
+                        <img src="images/dex.jpg" alt="Dexscreener" class="w-5 h-5 md:w-7 md:h-7 rounded-full">
+                    </a>
+                    <a href="https://jup.ag/swap/SOL-qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump" target="_blank" class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-3 md:px-8 py-1.5 md:py-3 rounded-full font-bold hover:opacity-90 transition-all glow btn-hover text-xs md:text-lg text-white whitespace-nowrap">
+                        Buy UNO
                     </a>
                 </div>
-                <button class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-8 py-3 rounded-full font-bold hover:opacity-90 transition-all glow btn-hover text-lg">
-                    <a href="https://jup.ag/swap/SOL-qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump" target="_blank" class="text-white">Buy UNO</a>
-                </button>
             </div>
         </div>
     </nav>
@@ -468,34 +668,34 @@
     <section class="pt-32 pb-20 hero-gradient">
         <div class="container mx-auto px-4">
             <div class="flex flex-col md:flex-row items-center justify-between">
-                <div class="md:w-1/2 text-center md:text-left opacity-0" id="hero-text">
-                    <h1 class="text-6xl md:text-8xl font-bold mb-8 leading-tight">
+                <div class="md:w-1/2 text-center md:text-left opacity-0 w-full px-2" id="hero-text">
+                    <h1 class="text-4xl md:text-6xl lg:text-8xl font-bold mb-4 md:mb-8 leading-tight">
                         <span class="gradient-text">
                             UNO REVERSE
                         </span>
                         <br />
-                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-300 to-white">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-white via-red-300 to-white text-3xl md:text-5xl lg:text-7xl">
                             The Ultimate Reversal
                         </span>
                     </h1>
-                    <p class="text-xl md:text-3xl text-gray-300 mb-8 leading-relaxed">
+                    <p class="text-lg md:text-xl lg:text-3xl text-gray-300 mb-4 md:mb-8 leading-relaxed">
                         Every time they dump, we say 
                         <span class="text-red-400 font-bold">"no u"</span> 
                         and pump even harder!
                     </p>
-                    <div class="contract-address mb-8 inline-block">
+                    <div class="contract-address mb-4 md:mb-8 inline-block max-w-full">
                         <span class="copy-tooltip">Click to copy contract</span>
                         <span class="text-red-400 font-bold mr-2">CA:</span>
-                        <code>qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump</code>
+                        <code class="break-all">qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump</code>
                     </div>
-                    <div class="flex flex-col md:flex-row gap-6 justify-center md:justify-start">
-                        <button class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-10 py-5 rounded-full font-bold text-xl hover:opacity-90 transition-all glow btn-hover">
-                            <a href="https://jup.ag/swap/SOL-qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump" target="_blank" class="text-white">Buy UNO Now</a>
-                        </button>
+                    <div class="flex flex-col md:flex-row gap-3 md:gap-6 justify-center md:justify-start">
+                        <a href="https://jup.ag/swap/SOL-qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump" target="_blank" class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-6 md:px-10 py-3 md:py-5 rounded-full font-bold text-base md:text-xl hover:opacity-90 transition-all glow btn-hover text-white">
+                            Buy UNO Now
+                        </a>
                         <a href="https://www.calculators.org/games/uno/game.php" 
                            onclick="window.open(this.href, '_blank', 'width=1000,height=800,menubar=no,toolbar=no,location=no,status=no'); return false;"
-                           class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-10 py-5 rounded-full font-bold text-xl hover:opacity-90 transition-all glow btn-hover inline-flex items-center gap-2 text-white">
-                            <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                           class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-6 md:px-10 py-3 md:py-5 rounded-full font-bold text-base md:text-xl hover:opacity-90 transition-all glow btn-hover inline-flex items-center gap-2 text-white">
+                            <svg class="w-5 h-5 md:w-6 md:h-6" viewBox="0 0 24 24" fill="currentColor">
                                 <path d="M4 5h16v2H4V5zm16 14H4v-2h16v2zm0-6H4v-2h16v2z"/>
                             </svg>
                             Play UNO
@@ -554,8 +754,8 @@
                     <p class="text-gray-300 text-lg">Strong community-driven development with proven results - raised $8k from community for Dexscreener boost.</p>
                     <div class="mt-4">
                         <p class="text-sm text-gray-400 mb-2">Marketing Wallet:</p>
-                        <a href="https://solscan.io/account/CAnzH9KfS6uEDJGsw3KyMNvBqBvAXH5fGW5fCmmoPbdR" target="_blank" class="text-sm text-red-400 hover:text-red-300 break-all">
-                            CAnzH9KfS6uEDJGsw3KyMNvBqBvAXH5fGW5fCmmoPbdR
+                        <a href="https://solscan.io/account/4ZUQ5kzvHiiYiyyURA2Z85S581CwxxVzjndDMydCzbqs" target="_blank" class="text-sm text-red-400 hover:text-red-300 break-all">
+                            4ZUQ5kzvHiiYiyyURA2Z85S581CwxxVzjndDMydCzbqs
                         </a>
                     </div>
                 </div>
@@ -740,12 +940,12 @@
                     <code>qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump</code>
                 </div>
                 <div class="flex justify-center gap-4">
-                    <button class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all glow btn-hover">
-                        <a href="https://jup.ag/swap/SOL-qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump" target="_blank" class="text-white">Buy Now</a>
-                    </button>
-                    <button class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all glow btn-hover">
-                        <a href="https://dexscreener.com/solana/agennwteh2wgtizfkuihw7nlqvrmkxxcrmzmyanqgyhv" target="_blank" class="text-white">View Chart</a>
-                    </button>
+                    <a href="https://jup.ag/swap/SOL-qdg3N7dy8y7x6dmnHeKMLtCX5RbrzLzhCUAArbJpump" target="_blank" class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all glow btn-hover text-white">
+                        Buy Now
+                    </a>
+                    <a href="https://dexscreener.com/solana/agennwteh2wgtizfkuihw7nlqvrmkxxcrmzmyanqgyhv" target="_blank" class="bg-gradient-to-r from-red-600 via-orange-500 to-red-600 px-8 py-4 rounded-full font-bold text-lg hover:opacity-90 transition-all glow btn-hover text-white">
+                        View Chart
+                    </a>
                 </div>
             </div>
         </div>
