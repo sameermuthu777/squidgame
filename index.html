@@ -338,28 +338,31 @@
 </head>
 <body class="text-white min-h-screen">
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-effect border-b border-white/10">
+    <nav class="fixed w-full z-50 glass-effect border-b border-white/10 transition-transform duration-300" id="navbar">
         <div class="container mx-auto px-2 py-2 md:px-4 md:py-4">
             <div class="flex justify-between items-center">
                 <div class="text-2xl md:text-3xl font-bold tracking-wider">
                     <span class="gradient-text">$SQUIDGAME</span>
                 </div>
                 <div class="flex items-center space-x-2 md:space-x-8">
-                    <a href="https://x.com/SquidGameOnSOLN" target="_blank" class="text-white hover:text-pink-400 transition-all">
+                    <!-- Social links - hidden on mobile -->
+                    <a href="https://x.com/SquidGameOnSOLN" target="_blank" class="hidden md:block text-white hover:text-pink-400 transition-all">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path>
                         </svg>
                     </a>
-                    <a href="https://t.me/SquidGameCommunityPortal" target="_blank" class="text-white hover:text-pink-400 transition-all">
+                    <a href="https://t.me/SquidGameCommunityPortal" target="_blank" class="hidden md:block text-white hover:text-pink-400 transition-all">
                         <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                             <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm4.64 6.8c-.15 1.58-.8 5.42-1.13 7.19-.14.75-.42 1-.68 1.03-.58.05-1.02-.38-1.58-.75-.88-.58-1.38-.94-2.23-1.5-.99-.65-.35-1.01.22-1.59.15-.15 2.71-2.48 2.76-2.69.01-.03.01-.14-.07-.2-.08-.06-.19-.04-.27-.02-.12.02-1.96 1.25-5.54 3.69-.52.36-1 .53-1.42.52-.47-.01-1.37-.26-2.03-.48-.82-.27-1.47-.42-1.42-.88.03-.24.35-.49.96-.75 3.78-1.65 6.31-2.74 7.58-3.27 3.61-1.51 4.36-1.77 4.85-1.78.11 0 .35.03.5.16.13.13.17.31.19.43-.01.07-.01.21-.02.27z"/>
                         </svg>
                     </a>
-                    <a href="https://dexscreener.com/solana/9Y69BuZTXpieDoUy8mva17fZWFVhi5Gi98ebqtoFpump" target="_blank" class="text-white hover:text-pink-400 transition-all">
+                    <a href="https://dexscreener.com/solana/9Y69BuZTXpieDoUy8mva17fZWFVhi5Gi98ebqtoFpump" target="_blank" class="hidden md:block text-white hover:text-pink-400 transition-all">
                         <img src="images/dex.png" alt="Dexscreener" class="w-6 h-6 rounded-full">
                     </a>
+                    <!-- Buy button - simplified text on mobile -->
                     <a href="https://jup.ag/swap/SOL-9Y69BuZTXpieDoUy8mva17fZWFVhi5Gi98ebqtoFpump" target="_blank" class="bg-gradient-to-r from-pink-500 via-pink-400 to-pink-500 px-3 md:px-8 py-1.5 md:py-3 rounded-full font-bold hover:opacity-90 transition-all glow btn-hover text-xs md:text-lg text-white whitespace-nowrap">
-                        Buy $SQUIDGAME
+                        <span class="md:hidden">Buy</span>
+                        <span class="hidden md:inline">Buy $SQUIDGAME</span>
                     </a>
                 </div>
             </div>
@@ -383,19 +386,16 @@
                     <p class="text-lg md:text-xl lg:text-3xl text-gray-300 mb-4 md:mb-8 leading-relaxed" id="description-text">
                         Play the game, survive the dump, win the prize! Join the most thrilling token on Solana.
                     </p>
-                    <div class="contract-address mb-4 md:mb-8 inline-block max-w-full">
+                    <div class="contract-address mb-4 md:mb-8 inline-block max-w-full overflow-x-auto">
                         <p class="text-red-500 font-bold mb-2">CA:</p>
-                        <div class="glass-effect px-6 py-3 rounded-xl cursor-pointer hover:bg-opacity-20 transition-all relative group flex items-center justify-between gap-4">
-                            <span class="text-sm md:text-base text-pink-400 font-mono">9Y69BuZTXpieDoUy8mva17fZWFVhi5Gi98ebqtoFpump</span>
-                            <div class="flex items-center gap-2">
+                        <div class="glass-effect px-3 md:px-6 py-2 md:py-3 rounded-xl cursor-pointer hover:bg-opacity-20 transition-all relative group flex items-center justify-between gap-2 md:gap-4">
+                            <span class="text-xs md:text-base text-pink-400 font-mono break-all">9Y69BuZTXpieDoUy8mva17fZWFVhi5Gi98ebqtoFpump</span>
+                            <div class="flex items-center gap-2 flex-shrink-0">
                                 <div class="copy-icon opacity-50 group-hover:opacity-100 transition-all">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 md:h-5 md:w-5 text-pink-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3" />
                                     </svg>
                                 </div>
-                            </div>
-                            <div class="copy-tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white px-3 py-1.5 rounded-lg text-sm opacity-0 transition-opacity">
-                                Copied! 🎮
                             </div>
                         </div>
                     </div>
@@ -948,6 +948,29 @@
                 setTimeout(() => spark.remove(), 3000);
                 lastSparkTime = now;
             }
+        });
+
+        // Hide navbar on scroll up
+        let lastScrollTop = 0;
+        const navbar = document.getElementById('navbar');
+        
+        window.addEventListener('scroll', () => {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            
+            if (window.innerWidth <= 768) { // Only on mobile devices
+                if (scrollTop > lastScrollTop) {
+                    // Scrolling down
+                    navbar.style.transform = 'translateY(-100%)';
+                } else {
+                    // Scrolling up
+                    navbar.style.transform = 'translateY(0)';
+                }
+            } else {
+                // Reset transform on desktop
+                navbar.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollTop = scrollTop;
         });
     </script>
 </body>
